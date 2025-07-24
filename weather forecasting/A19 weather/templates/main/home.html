@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>weather</title>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+      </head>
+      <style>
+        .make{
+            margin-left:50%;
+        }
+        .intro{
+            width:80%;
+            margin-left:15%;
+            height:600px;
+        }
+        .into h1{
+            padding-left:80px;
+
+        }
+        body{
+            overflow:hidden;
+        }
+        a{
+            color:#fff;
+        }
+      </style>
+<body>
+  <nav class="row" style="background: green; color: white;">
+    <h1 class="col-md-3 text-center "><a href="{% url 'home' %}">weather</h1>
+    <h1 class="col-md-3 text-center make"><a href="{% url 'wheather' %}">check weather</a></h1>
+  </nav>
+  <br />
+  <br />
+    </div>
+    </header>
+    <main>
+        <div class="intro">
+            <h1> Accurate and Location Based wheather Update</h1>
+            <img src="{% static 'home.png' %}" height="500" width="90%">
+        </div>
+    </main>
+</body>
+</html>
